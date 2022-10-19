@@ -1,0 +1,186 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+	background-image: linear-gradient(125deg, #BFFEBE, #F6F8B5, #FCD0B3, #BFB6F8, #E8D8B3);
+	animation: bganimation 5s infinite;
+}
+@keyframes bganimation{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+#continer{
+	width: 1500px;
+	height: 1100px;
+}
+
+#daohang{
+	height: 50px;
+	width: 1500px;
+	margin: 0 auto;
+/*	background-color:rgba(122,115,115,0.5);*/
+	background-color: #44765b;
+	text-align: right;
+}
+#daohang li{
+    float: right;
+}
+
+#daohang ul li a {
+    display: block;
+    width: 70px;
+    line-height: 50px;
+    text-align: center;
+    color:black;
+	font-size: 20px;
+}
+#daohang ul li img{
+	height: 30px;
+	width:30px;
+}
+#daohang ul li a:hover {
+    color: #ffd800;
+    background:#707FC0;
+}
+
+
+.row{
+	width: 1500px;
+	height: 1000px;
+	background: url("../image/d23.jpg") no-repeat;
+	background-size:cover;
+/*	background-color:burlywood;*/
+}
+
+.dazi{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	text-shadow: 3px 3px 3px black;
+	line-height: 150px;
+}
+.xiaozi{
+	height: 160px;
+	width: 1000px;
+	font-size: 30px;
+	text-align: center;
+	color: whitesmoke;
+/*	background-color: aquamarine;*/
+	line-height: 50px;
+}
+
+.sange{
+	height: 550px;
+	width: 1500px;
+/*	background-color:blueviolet;*/
+	
+}
+.form{
+	height: 120px;
+	width: 500px;
+/*	background-color: brown;*/
+	position: relative;
+	top: 60px;
+	left: -210px;
+}
+input{
+	width: 410px;
+	height: 70px;
+/*	border: 2px solid;*/
+	margin-bottom: 20px;
+	position: absolute;
+	background-color:rgba(255,255,255,0.60);
+	font-size: 27px;
+	border-radius: 45px 45px 45px 45px;
+	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+	
+}
+
+.kuang{
+	height: 100px;
+	width: 500px;
+	position: relative;
+	top: -492px;
+	left: 235px;
+}
+
+textarea{
+	width: 480px;
+	height: 307px;
+/*	border: 2px solid;*/
+	margin-bottom: 30px;
+	position: absolute;
+	background-color:rgba(255,255,255,0.60);
+	font-size: 27px;
+	border-radius: 45px 0 45px 0;
+	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+}
+
+.btn{
+	width: 100px;
+	height: 50px;
+	position: relative;
+/*	background-color: brown;*/
+	top: -220px;
+	left: -150px;
+}
+button{
+	height: 50px;
+	width: 450px;
+	font-size: 25px;
+	position: absolute;
+	background-color:rgba(255,255,255,0.60);
+	border-radius: 45px 45px 45px 45px;
+	box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+}
+.btn1:hover{
+/*	color: darkgrey;*/
+	background-color:rgba(245,212,235,0.78);
+}
+#banquan{
+	width: 1500px;
+	height: 35px;
+	margin: 0 auto;
+	line-height: 35px;
+	text-align: center;
+	color: aliceblue;
+/*	background-color: rgba(60,57,58,0.5);*/
+	background-color: #44765b;
+}
+#banquan font{
+	color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

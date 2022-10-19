@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>shouye</title>
+		<link rel="stylesheet" href="../css/1.css" type="text/css" />
+		 <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+		 <link rel="stylesheet" href="../css/animate.min.css" />
+		 
+		 
+		<style>
+			.swiper {
+			    width: 1500px;
+			    height: 700px;
+				text-align: center;;
+			} 
+			.swiper-slide img{
+				width:100%;
+				height: 100%;
+			}
+			body{
+				background-image: linear-gradient(125deg, #BFFEBE, #F6F8B5, #FCD0B3, #BFB6F8, #E8D8B3);
+				animation: bganimation 15s infinite;
+			}
+			@keyframes bganimation{
+				0%{background-position: 0% 50%;}
+				50%{background-position: 100% 50%;}
+				100%{background-position: 0% 50%;}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="continer">
+			<div id="daohang"><!-- 导航栏 -->
+				<ul>
+					<li><img src="../icon/liuyanban-05.png"/></li>
+					<li><a href="../html/liuyan.html">留言</a></li>
+					
+					<li><img src="../icon/nvhai.png"/></li>
+					<li><a href="../html/mylive.html">生活</a></li>
+					
+					<li><img src="../icon/jianjie.png"/></li>
+					<li><a href="../html/indroduce.html">简历</a></li>
+					
+					<li><img  src="../icon/shouye.png"/></li>
+					<li><a href="../html/zhuye.html">主页</a></li>
+					
+					<li><img src="../icon/home.png"/></li>
+					<li><a href="../html/index.html">首页</a></li>
+					
+				</ul>
+			</div>
+			
+			<script src="../js/swiper-bundle.min.js"></script>
+	
+		<div class="swiper">
+			<div class="swiper-wrapper" data-interval="2000">
+				<div class="swiper-slide"><img src="../image/d1.jpg"/></div>
+				<div class="swiper-slide"><img src="../image/d2.jpg"/></div>
+				<div class="swiper-slide"><img src="../image/d7.jpg"/></div>
+				<div class="swiper-slide"><img src="../image/d10.jpg"/></div>
+				<div class="swiper-slide"><img src="../image/d11.jpg"/></div>
+				<div class="swiper-slide"><img src="../image/d4.jpg"/></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+			
+				<!-- 如果需要导航按钮 -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			
+			<!-- 如果需要滚动条 -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+		<script>        
+		var mySwiper = new Swiper ('.swiper', {
+			// direction: 'vertical', // 垂直切换选项
+			loop: true, // 循环模式选项
+			autoplay:true,
+			
+			
+			// 如果需要分页器
+			pagination: {
+			el: '.swiper-pagination',
+			},
+			
+			// 如果需要前进后退按钮
+			navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+			},
+	    
+			// 如果需要滚动条
+			scrollbar: {
+			el: '.swiper-scrollbar',
+			},
+		})        
+		</script>
+			
+
+
+			
+			
+			<!-- <div id="lunbo" onmouseover="mover();" onmouseout="mout();" >
+				<marquee onmouseover="this.stop();" onmouseout="this.start();">
+				
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+					<img class="yi" src="../image/云2.jpg" alt="">
+				</marquee>
+			</div> -->
+			
+			
+			<div id="information"><!-- 名字信息 -->
+				<br />
+				<h1 class="animated bounce" WOW>刘佳容</h1>
+				<br />
+				<p class="p">出生于2001年，爱音乐爱生活。2019年考入四川航天职业技术学院。<br />2022年成功专升本，进入四川轻化工大学学习。</p>
+				<br />
+			</div>
+
+			<div class="tuer">
+				<br />
+				<h1 class="animated bounce" WOW>详细图片</h1>
+				<br />
+				<ul>
+					<li>
+						<img class="yi" src="../image/11.jpg" alt="">
+						<img class="er" src="../image/2.jpg" alt="">
+					</li>
+					<li>
+						<img class="yi" src="../image/3.jpg" alt="">
+						<img class="er" src="../image/4.jpg" alt="">
+					</li>
+					<li>
+						<img class="yi" src="../image/6.jpg" alt="">
+						<img class="er" src="../image/23.jpg" alt="">
+					</li>
+					<li>
+						<img class="yi" src="../image/41.jpg" alt="">
+						<img class="er" src="../image/8.jpg" alt="">
+					</li><br />
+					<li>
+						<img class="yi" src="../image/9.jpg" alt="">
+						<img class="er" src="../image/10.jpg" alt="">
+					</li>
+					<li>
+						<img class="yi" src="../image/44.jpg" alt="">
+						<img class="er" src="../image/12.jpg" alt="">
+					</li>
+					<li>
+						<img class="yi" src="../image/13.jpg" alt="">
+						<img class="er" src="../image/33.jpg" alt="">
+					</li>
+					<li>
+						<img class="yi" src="../image/31.jpg" alt="">
+						<img class="er" src="../image/47.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			
+			<div class="disanbufen" >
+				<br />
+				<h1 class="animated bounce" WOW>往年今昔</h1>
+				<br />
+				<ul>
+					<li>
+						<img  class="datu" src="../image/2.jpg" alt="">
+						<img class="xiaotu" src="../image/40.jpg" alt="">
+					</li>
+					<li>
+						<img class="datu" src="../image/7.jpg" alt="">
+						<img class="xiaotu" src="../image/49.jpg" alt="">
+					</li>
+					<li>
+						<img class="datu" src="../image/11.jpg" alt="">
+						<img class="xiaotu" src="../image/51.jpg" alt="">
+					</li>
+					<li>
+						<img class="datu" src="../image/29.jpg" alt="">
+						<img class="xiaotu" src="../image/46.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			
+			<div class="banquan">
+				<a href="#"><font>&copy;LJR出品</font></a>
+			</div>
+		</div>
+
+	</body>
+	<script src="../js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script>
+		// 随机数
+		function randomNum(minNum, maxNum) {
+			return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
+		}
+		// 随机一个渐变背景色 
+		function randomBG() {
+			var c1 = randomNum(0, 255);
+			var c2 = randomNum(0, 255);
+			document.body.style.background = 'linear-gradient(to left bottom, hsl(' + c1 + ', 100%, 85%) 0%,hsl(' + c2 +
+				', 100%, 85%) 100%)';
+		}
+		randomBG();
+	</script>
+</html>

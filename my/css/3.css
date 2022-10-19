@@ -1,0 +1,278 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*去掉li里的样式*/
+ul li{
+    list-style: none;
+}
+/*去掉超链接的下划线*/
+a{
+    text-decoration: none;
+}
+body{
+	background-image: linear-gradient(125deg, #BFFEBE, #F6F8B5, #FCD0B3, #BFB6F8, #E8D8B3);
+	animation: bganimation 15s infinite;
+}
+@keyframes bganimation{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+	height: 100%;
+}
+#continer{
+	width: 1500px;
+	height: 3750px;
+	margin: 0 auto;
+}
+
+
+#daohang{
+	height: 50px;
+	width: 1500px;
+	margin: 0 auto;
+/*	border: 2px solid;*/
+	background-color:rgba(122,115,115,0.5);
+	text-align: right;
+}
+#daohang li{
+	/*浮动*/
+    float: right;
+}
+
+#daohang ul li a {
+    display: block;
+    width: 70px;
+/*    height: 40px;*/
+    line-height: 50px;
+    text-align: center;
+    color:black;
+	font-size: 20px;
+	
+	
+}
+#daohang ul li img{
+	height: 30px;
+	width:30px;
+}
+/*设置鼠标经过一级标题超链接时的背景字体颜色的变化*/
+#daohang ul li a:hover {
+    color: #ffd800;
+    background:#707FC0;
+}
+#welcome{
+	width: 1500px;
+	height: 300px;
+	margin: 0 auto;
+/*	border: 2px solid;*/
+	background-image: url(../image/d22.jpg);
+	background-size:contain;
+	text-align: center;
+	line-height: 300px;
+}
+
+#welcome font{
+	font-size: 100px;
+	font-variant:inherit;
+	color: rgba(46,49,111,1.00);
+}
+
+
+#tuu{
+	height: 2300px;
+	background-color:rgba(234,180,180,0.5);
+	text-align: center;
+}
+
+#tuu h1{
+	font-size: 50px;
+	line-height: 80px;
+}
+#tuu p{
+	font-size: 26px;
+}
+
+
+/*网格布局*/
+#wangge-container{
+	text-align: center;
+	display: grid;
+	grid-template-row: repeat(3,1fr);
+	grid-template-columns: repeat(4,1fr);
+	justify-content: space-between;
+	padding: 0 40px;
+	grid-row-gap: 15px;
+	grid-gap: 20px;
+
+	
+}
+#wangge-container #wangge-item{
+/*	网格下面那个线*/
+	border-bottom: 4px solid rgba(147,147,147,1.00);
+	transition: all 0.4s;
+	
+}
+#wangge-container #wangge-item:hover{
+/*	移动鼠标线的变化*/
+	border-bottom: 4px solid rgba(87,87,87,1.00);
+	transform: translatex(-8px);
+}
+
+#wangge-container .yi{
+	width: 300px;
+	height: 300px;
+	border: 4px dashed rgba(255,255,255,1.00);
+}
+#wangge-container .yi1{
+	width: 300px;
+	height: 600px;
+	border: 4px dashed rgba(255,255,255,1.00);
+}
+.yi5,.yi9,.yi10{
+	width: 630px;
+	height: 300px;
+	border: 4px dashed rgba(255,255,255,1.00);
+}
+#wangge-container>div{
+/*	<--网格背景颜色-->*/
+/*	background-color:white;*/
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+.wangge-item1{
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-color: #c2cd72;
+}
+.wangge-item2{
+	background-color: #bac6e1;
+}
+.wangge-item3{
+	background-color: #cddcb4;
+}
+.wangge-item4{
+	background-color: #f4cac3;
+}
+.wangge-item5{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	background-color: #dd8f8d;
+}
+.wangge-item6{
+	background-color: #abb581;
+}
+.wangge-item7{
+	background-color: #e6be82;
+}
+.wangge-item8{
+	background-color: #bac6e1;
+}
+.wangge-item9{
+	grid-column-start: 3;
+	grid-column-end: 5;
+	background-color: #c2cd72;
+}
+.wangge-item10{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	background-color: #f4cac3;
+}
+.wangge-item11{
+	background-color: #abb581;
+}
+.wangge-item12{
+	background-color: #dd8f8d;
+}
+.wangge-item13{
+	background-color: #bac6e1;
+}
+.wangge-item14{
+	background-color: #e6be82;
+}
+.wangge-item15{
+	background-color: #cddcb4;
+}
+.wangge-item16{
+	background-color: #f4cac3;
+}
+#xingqu{
+	width: 1500px;
+	height: 1030px;
+	background-color: rgba(224,224,224,0.5)
+}
+#inf{
+	text-align: center;
+	font-size: 30px;
+}
+
+/*弹性盒子*/
+#box{
+/*	border: 2px solid;*/
+	display: flex;
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+	background-color:rgba(241,251,145,0.5);
+	justify-content: center;
+	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border-radius: 35px 35px 35px 35px;
+}
+.box-item{
+	width: 350px;
+	height:350px;
+	margin: 20px;
+/*	background-color: antiquewhite;*/
+	text-align: center;
+	padding-top: 20px;
+}
+.box-item img{
+	height: 100px;
+	width: 100px;
+	
+}
+.box-item font{
+	font-size: 25px;
+	color: rgba(140,140,140,1.00);
+}
+
+#box .box-item{
+	transition: all 0.4s;
+	
+}
+#box .box-item:hover{
+	transform: translatey(-15px);
+}
+
+#banquan{
+	width: 1500px;
+	height: 35px;
+	margin: 0 auto;
+	line-height: 35px;
+	text-align: center;
+	background-color: rgba(60,57,58,0.5);
+}
+#banquan font{
+	color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

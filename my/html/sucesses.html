@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+				<style>
+					*{margin: 0px; padding: 0px;}
+		
+					#sp{
+						font-size: 30px; 
+						height: 1000px;
+						color: #34495E; 
+						text-align: center;
+						line-height: 500px;
+						background-size: 500%;
+						background-image: linear-gradient(125deg, #BFFEBE, #F6F8B5, #FCD0B3, #BFB6F8, #E8D8B3);
+						animation: bganimation 15s infinite;
+					}
+					@keyframes bganimation{
+						0%{background-position: 0% 50%;}
+						50%{background-position: 100% 50%;}
+						100%{background-position: 0% 50%;}
+					}
+				</style>
+			
+		
+				
+				
+		
+	</head>
+	<body>
+		<div id="sp">
+			<h1>谢谢你的留言,你的留言我收到啦~5秒后返回我的首页</h1>
+		</div>
+		<script>
+		onload=function(){
+			setInterval(go,1000);
+		}
+		var x=6;
+		function go(){
+			x--;
+			if(x>0){
+				document.getElementById("sp").innerHTML=x;
+			}
+			else{
+				location.href='index.html';
+			}
+		}
+		</script>
+		<script>
+			// 随机数
+			function randomNum(minNum, maxNum) {
+				return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
+			}
+			// 随机一个渐变背景色 
+			function randomBG() {
+				var c1 = randomNum(0, 255);
+				var c2 = randomNum(0, 255);
+				document.body.style.background = 'linear-gradient(to left bottom, hsl(' + c1 + ', 100%, 85%) 0%,hsl(' + c2 +
+					', 100%, 85%) 100%)';
+			}
+			randomBG();
+		</script>
+	</body>
+</html>
